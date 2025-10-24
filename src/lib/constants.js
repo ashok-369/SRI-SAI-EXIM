@@ -1,17 +1,35 @@
 import { Plane, Ship, Truck, Zap, FileText, Package } from "lucide-react"
 
 export const COMPANY_NAME = "Sri Sai Exim"
-export const PRIMARY_COLOR = "#0047AB"
-export const ACCENT_COLOR = "#FF9900"
+export const PRIMARY_COLOR = "#0047AB" // Blue
+export const ACCENT_COLOR = "#FF9900" // Orange
+export const DARK_BLUE = "#000b39ff"
 
-export const LOGO_NAMES = ["Coca-Cola", "Samsung", "Toyota", "Maersk", "FedEx", "DHL", "Nestle", "P&G"]
+export const CLIENT_LOGOS = [
+  { name: "Tangoe", url: "https://srisaiexim.in/images/clients/tangoe.jpg" }, 
+  { name: "Analog-devices", url: "https://srisaiexim.in/images/clients/analog-devices.jpg" },
+  { name: "Capgemini", url: "https://srisaiexim.in/images/clients/capgemini.jpg" },
+  { name: "Kuliza", url: "https://srisaiexim.in/images/clients/kuliza.jpg" },
+  { name: "Mindtree", url: "https://srisaiexim.in/images/clients/mindtree.jpg" },
+  { name: "Sap", url: "https://srisaiexim.in/images/clients/sap.jpg" },
+  { name: "Happiest-minds", url: "https://srisaiexim.in/images/clients/happiest-minds.jpg" },
+  { name: "Mitel", url: "https://srisaiexim.in/images/clients/mitel.jpg" },
+  { name: "Qubix", url: "https://srisaiexim.in/images/clients/qubix.jpg" },
+  { name: "Beckman-coulter", url: "https://srisaiexim.in/images/clients/beckman-coulter.jpg" },
+  { name: "Harman", url: "https://srisaiexim.in/images/clients/harman.jpg" },
+  { name: "Cis Global", url: "https://srisaiexim.in/images/clients/cis-global.jpg" },
+  { name: "Sabre", url: "https://srisaiexim.in/images/clients/sabre.jpg" },
+  { name: "Impelsys", url: "https://srisaiexim.in/images/clients/impelsys.jpg" },
+  { name: "Micro Focus", url: "https://srisaiexim.in/images/clients/micro-focus.jpg" },
+  { name: "Prestige", url: "https://srisaiexim.in/images/clients/prestige.jpg" },
+]
 
 export const PAGE_LINKS = [
   { name: "Home", page: "home" },
-  { name: "About Us", page: "about" },
+  { name: "About", page: "about" },
   { name: "Team", page: "team" },
   { name: "Services", page: "services" },
-  { name: "Contact Us", page: "contact" },
+  { name: "Contact", page: "contact" },
 ]
 
 export const SERVICE_CARDS = [
@@ -27,7 +45,7 @@ export const SERVICE_CARDS = [
     id: "ocean-freight",
     icon: Ship,
     title: "Ocean Freight",
-    description: "Cost-effective and flexible seafreight solutions for FCL and LCL, ensuring global reach.",
+    description: "Cost-effective and flexible seafreight solutions for FCL (Full Container Load) and LCL (Less than Container Load), ensuring global reach.",
     shortDescription: "We make your relocation as smooth as you need.",
     imageUrl: "https://srisaiexim.in/images/ocean-freight.jpg",
   },

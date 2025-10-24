@@ -197,7 +197,7 @@ const ContactPage = () => {
             <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: ACCENT_COLOR }} />
             <div>
               <p className="text-sm font-medium text-gray-500 uppercase">Our Location</p>
-              <p className="text-lg font-semibold text-gray-800">
+              <p className="text-lg font-medium text-blue-800">
                 No. 11/1, II Cross, 10th Main, Goraguntepalya, <br />
                 Bengaluru, Karnataka 560022
               </p>

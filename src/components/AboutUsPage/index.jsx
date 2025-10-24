@@ -16,17 +16,17 @@ const AboutUsPage = ({ setPage }) => (
 
     <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700">
       <p className="text-xl font-semibold leading-relaxed" style={{ color: PRIMARY_COLOR }}>
-        **Sri Sai Exim** was established in 2015 with the vision of setting new standards in customs clearance and
+        Sri Sai Exim was established in 2015 with the vision of setting new standards in customs clearance and
         freight forwarding with combined decades of experience in customs clearance and International Freight
         Forwarding.
       </p>
       <p>
-        Over the years, we have enriched our experience in various departments including **Customs Clearance,
+        Over the years, we have enriched our experience in various departments including Customs Clearance,
         Warehousing, Refunds, Track & Trace Capabilities, Goods, Insurance Facilities, EOU, STPI, SEZ, JDGFT, and
-        Central Excise Import and Export.**
+        Central Excise Import and Export.
       </p>
       <p>
-        We have a wide array of expertise in international transportation, both **Air and Sea**. Our Innovation,
+        We have a wide array of expertise in international transportation, both Air and Sea. Our Innovation,
         Adaptability, Leadership, and Teamwork have enabled us to elevate our service to new heights. We continuously
         invest in the latest technologies and support it with a constant study of market conditions, this allows us to
         offer innovative solutions that are customized for each customer's specific requirements.
@@ -73,7 +73,7 @@ const AboutUsPage = ({ setPage }) => (
       </div>
     </div>
     <div className="max-w-4xl mx-auto mt-16 text-center text-xs text-gray-400">
-      Copyright © Sri Sai Exim 2021, All Rights Reserved, Designed by Druva Karthik
+      Copyright © Sri Sai Exim 2021, All Rights Reserved
     </div>
   </SectionWrapper>
 )

@@ -45,21 +45,26 @@ export default App
 
 
 const globalStyles = `
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-  
-  body { font-family: 'Poppins', sans-serif; }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  
+  body { font-family: 'Poppins', sans-serif; }
 
-  @keyframes logo-scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); 
-    }
+  /* CRITICAL FIX: This prevents the horizontal scrollbar from appearing, which is caused by the 200% width of the logo-scroll-container */
+  html {
+    overflow-x: hidden;
   }
   
-  .logo-scroll-container {
-    animation: logo-scroll 35s linear infinite;
-    width: 200%;
-  }
+  @keyframes logo-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+  
+  .logo-scroll-container {
+    animation: logo-scroll 35s linear infinite;
+    width: 200%;
+  }
 `

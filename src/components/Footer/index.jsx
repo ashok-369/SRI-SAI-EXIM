@@ -1,6 +1,5 @@
-"use client"
 import { MapPin, Phone, Mail } from "lucide-react"
-import { PRIMARY_COLOR, ACCENT_COLOR, PAGE_LINKS, SERVICE_CARDS, COMPANY_NAME } from "@/lib/constants"
+import { PRIMARY_COLOR, ACCENT_COLOR, DARK_BLUE, PAGE_LINKS, SERVICE_CARDS, COMPANY_NAME } from "@/lib/constants"
 import SriSaiEximLogo from "@/components/SriSaiEximLogo"
 
 const Footer = ({ setPage }) => {
@@ -19,7 +18,7 @@ const Footer = ({ setPage }) => {
           {/* Column 1: Logo & Mission */}
           <div className="col-span-2 md:col-span-1 space-y-4">
             <SriSaiEximLogo className="w-8 h-8" onClick={() => handleLinkClick("home")} />
-            <p className="text-sm text-gray-400 max-w-xs">
+            <p className="text-sm text-gray-900 max-w-xs">
               Dedicated to providing hassle-free, timely, and cost-effective logistics and customs solutions worldwide.
             </p>
           </div>
@@ -35,8 +34,8 @@ const Footer = ({ setPage }) => {
                   <button
                     onClick={() => handleLinkClick(link.page)}
                     className="text-gray-400 hover:text-primary transition duration-300 text-left"
-                    style={{ color: PRIMARY_COLOR, "--primary": PRIMARY_COLOR }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = ACCENT_COLOR)}
+                    style={{ color: PRIMARY_COLOR, "--primary": PRIMARY_COLOR , backgroundColor : "transparent" , border : "none" ,}}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
                     onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
                   >
                     {link.name}
@@ -57,8 +56,8 @@ const Footer = ({ setPage }) => {
                   <button
                     onClick={() => handleLinkClick("services")}
                     className="text-gray-400 hover:text-primary transition duration-300 text-left"
-                    style={{ color: PRIMARY_COLOR, "--primary": PRIMARY_COLOR }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = ACCENT_COLOR)}
+                    style={{ color: PRIMARY_COLOR, "--primary": PRIMARY_COLOR , backgroundColor : "transparent" , border : "none" ,}}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
                     onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
                   >
                     {service.title}
@@ -75,7 +74,7 @@ const Footer = ({ setPage }) => {
             </h4>
             <div className="flex items-center space-x-3 text-sm">
               <MapPin className="w-5 h-5 text-accent" style={{ color: ACCENT_COLOR }} />
-              <p className="text-gray-400">Goraguntepalya, Bengaluru, 560022</p>
+              <p className="text-gray-900">Goraguntepalya, Bengaluru, 560022</p>
             </div>
             <div className="flex items-center space-x-3 text-sm">
               <Phone className="w-5 h-5 text-accent" style={{ color: ACCENT_COLOR }} />
