@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react"
-import { PRIMARY_COLOR, ACCENT_COLOR, DARK_BLUE, PAGE_LINKS, SERVICE_CARDS, COMPANY_NAME } from "@/lib/constants"
+import { PRIMARY_COLOR, ACCENT_COLOR,TEAL, DARK_BLUE,VIOLET, PAGE_LINKS, SERVICE_CARDS, COMPANY_NAME } from "@/lib/constants"
 import SriSaiEximLogo from "@/components/SriSaiEximLogo"
 
 const Footer = ({ setPage }) => {
@@ -11,7 +11,7 @@ const Footer = ({ setPage }) => {
   return (
     <footer
       className="text-white pt-16 pb-8 font-poppins border-t-4"
-      style={{ borderColor: ACCENT_COLOR, backgroundColor: "#baecfb" }}
+      style={{ borderColor: VIOLET, backgroundColor: "#baecfb" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-10">
@@ -25,7 +25,7 @@ const Footer = ({ setPage }) => {
 
           {/* Column 2: Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-bold mb-3" style={{ color: ACCENT_COLOR }}>
+            <h4 className="text-lg font-bold mb-3" style={{ color: TEAL }}>
               Quick Links
             </h4>
             <ul className="space-y-2 text-sm">
@@ -47,7 +47,7 @@ const Footer = ({ setPage }) => {
 
           {/* Column 3: Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-bold mb-3" style={{ color: ACCENT_COLOR }}>
+            <h4 className="text-lg font-bold mb-3" style={{ color: TEAL }}>
               Our Services
             </h4>
             <ul className="space-y-2 text-sm">
@@ -69,15 +69,15 @@ const Footer = ({ setPage }) => {
 
           {/* Column 4: Contact Info */}
           <div className="space-y-4 col-span-2 md:col-span-1">
-            <h4 className="text-lg font-bold mb-3" style={{ color: ACCENT_COLOR }}>
+            <h4 className="text-lg font-bold mb-3" style={{ color: TEAL}}>
               Reach Us
             </h4>
             <div className="flex items-center space-x-3 text-sm">
-              <MapPin className="w-5 h-5 text-accent" style={{ color: ACCENT_COLOR }} />
+              <MapPin className="w-5 h-5 text-accent" style={{ color: VIOLET }} />
               <p className="text-gray-900">Goraguntepalya, Bengaluru, 560022</p>
             </div>
             <div className="flex items-center space-x-3 text-sm">
-              <Phone className="w-5 h-5 text-accent" style={{ color: ACCENT_COLOR }} />
+              <Phone className="w-5 h-5 text-accent" style={{ color: VIOLET}} />
               <a
                 href="tel:+916363732815"
                 className="text-gray-400 hover:text-primary transition"
@@ -87,7 +87,7 @@ const Footer = ({ setPage }) => {
               </a>
             </div>
             <div className="flex items-center space-x-3 text-sm">
-              <Mail className="w-5 h-5 text-accent" style={{ color: ACCENT_COLOR }} />
+              <Mail className="w-5 h-5 text-accent" style={{ color: VIOLET }} />
               <a
                 href="mailto:support@srisaiexim.in"
                 className="text-gray-400 hover:text-primary transition"

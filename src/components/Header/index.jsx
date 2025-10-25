@@ -4,12 +4,12 @@
 
 import React, { useState } from "react"
 import { Menu, X, ChevronDown, Phone } from "lucide-react"
-import { PRIMARY_COLOR, ACCENT_COLOR, PAGE_LINKS, SERVICE_CARDS } from "@/lib/constants"
+import { PRIMARY_COLOR, ACCENT_COLOR, PAGE_LINKS, SERVICE_CARDS , VIOLET ,TEAL} from "@/lib/constants"
 import SriSaiEximLogo from "@/components/SriSaiEximLogo"
 // import './index.css'
 
 const FocusResetStyle = () => (
-  // Keeping this for focus styles, but the overflow fix moves to global CSS
+  
   <style jsx global>{`
     button:focus:not(:focus-visible),
     a:focus:not(:focus-visible) {
@@ -72,7 +72,7 @@ const Header = ({ setPage }) => {
                             className="w-full text-left flex items-center px-4 py-3 text-sm text-gray-700 hover:text-primary transition duration-200 focus:outline-none focus-ring-visible"
                             style={{ "--primary": PRIMARY_COLOR, backgroundColor: "transparent", }}
                           >
-                            <Icon className="w-4 h-4 mr-3 text-accent" style={{ color: ACCENT_COLOR }} />
+                            <Icon className="w-4 h-4 mr-3 text-accent" style={{ color: PRIMARY_COLOR }} />
                             {service.title}
                           </button>
                         )
@@ -93,8 +93,8 @@ const Header = ({ setPage }) => {
             </nav>
             <div className="flex items-center space-x-6">
               
-              <div className="flex items-center space-x-3 text-base text-gray-600 border-l border-gray-200 pl-6 h-full"> 
-                <Phone className="w-4 h-4 text-accent" style={{ color: ACCENT_COLOR }} />
+              {/* <div className="flex items-center space-x-3 text-base text-gray-600 border-l border-gray-200 pl-6 h-full"> 
+                <Phone className="w-4 h-4 text-accent" style={{ color: VIOLET }} />
                 <a
                   href="tel:+916363732815"
                   className="hover:text-primary transition font-medium focus:outline-none focus-ring-visible whitespace-nowrap"
@@ -103,12 +103,12 @@ const Header = ({ setPage }) => {
                   +91 63637...
                 </a>
               </div>
-              
+               */}
               <button
                 onClick={() => handleLinkClick("contact")}
                 className="px-10 py-2 text-base font-semibold rounded-lg text-white transition duration-300 transform hover:scale-[1.02] shadow-lg focus:outline-none focus-ring-visible whitespace-nowrap"
                 style={{ backgroundColor: PRIMARY_COLOR}}
-                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = ACCENT_COLOR)}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = TEAL)}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = PRIMARY_COLOR)}
               >
                 Get A Quote

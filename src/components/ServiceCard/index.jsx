@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { ArrowRight } from "lucide-react"
-import { PRIMARY_COLOR, ACCENT_COLOR } from "@/lib/constants"
+import { PRIMARY_COLOR, ACCENT_COLOR,TEAL } from "@/lib/constants"
 import { useInViewAnimation } from "@/lib/hooks"
 
 const ServiceCard = ({ icon: Icon, title, description, index }) => {
@@ -25,7 +25,7 @@ const ServiceCard = ({ icon: Icon, title, description, index }) => {
       <button
         className="flex items-center text-primary font-semibold text-sm transition duration-300 hover:text-accent"
         style={{ color: PRIMARY_COLOR }}
-        onMouseEnter={(e) => (e.currentTarget.style.color = ACCENT_COLOR)}
+        onMouseEnter={(e) => (e.currentTarget.style.color = TEAL)}
         onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
       >
         View Details

@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef } from "react"
-import { PRIMARY_COLOR, ACCENT_COLOR } from "@/lib/constants"
+import { PRIMARY_COLOR, ACCENT_COLOR,TEAL } from "@/lib/constants"
 import { useInViewAnimation } from "@/lib/hooks"
 
 const TeamMember = ({ member, index, totalMembers }) => {
@@ -11,8 +11,8 @@ const TeamMember = ({ member, index, totalMembers }) => {
   return (
   <div
       ref={ref}
-      className={`p-6 bg-white rounded-xl shadow-xl text-center  transition duration-700 ease-out transform hover:-translate-y-2 hover:shadow-2xl hover:border-accent border-b-4 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${totalMembers < 3 ? "mx-auto w-full max-w-sm sm:max-w-none" : ""}`}
-      style={{ animationDelay: `${index * 0.15}s`, borderColor: ACCENT_COLOR , }}
+      className={`p-6 bg-white rounded-xl shadow-xl text-center  transition duration-700 ease-out transform hover:-translate-y-2 hover:shadow-2xl hover:border-accent border-b-4 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} ${totalMembers < 3 ? "mx-auto w-90 max-w-sm sm:max-w-none" : ""}`}
+      style={{ animationDelay: `${index * 0.15}s`, borderColor: TEAL , }}
     >
       <img
         src={member.image || "/placeholder.svg"}

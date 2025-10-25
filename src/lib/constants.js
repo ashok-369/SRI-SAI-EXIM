@@ -4,6 +4,8 @@ export const COMPANY_NAME = "Sri Sai Exim"
 export const PRIMARY_COLOR = "#0047AB" // Blue
 export const ACCENT_COLOR = "#FF9900" // Orange
 export const DARK_BLUE = "#000b39ff"
+export const TEAL = "#174D4D" //dark shade of blue-green
+export const VIOLET = "#4A235A" //Medium Violet
 
 export const CLIENT_LOGOS = [
   { name: "Tangoe", url: "https://srisaiexim.in/images/clients/tangoe.jpg" }, 
@@ -45,7 +47,7 @@ export const SERVICE_CARDS = [
     id: "ocean-freight",
     icon: Ship,
     title: "Ocean Freight",
-    description: "Cost-effective and flexible seafreight solutions for FCL (Full Container Load) and LCL (Less than Container Load), ensuring global reach.",
+    description: "Cost-effective and flexible seafreight solutions for FCL and LCL, ensuring global reach.",
     shortDescription: "We make your relocation as smooth as you need.",
     imageUrl: "https://srisaiexim.in/images/ocean-freight.jpg",
   },
@@ -78,7 +80,7 @@ export const SERVICE_CARDS = [
     icon: Package,
     title: "DG Certification & Packing",
     description:
-      "Specialized handling and certification for Dangerous Goods, ensuring compliance with global safety standards.",
+      "Certified and specialized handling of Dangerous Goods compliant with global safety standards.",
     shortDescription: "We make your relocation as smooth as you need.",
     imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
   },

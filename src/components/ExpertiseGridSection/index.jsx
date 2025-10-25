@@ -6,7 +6,7 @@ const ExpertiseGridSection = ({ setPage }) => (
   <SectionWrapper id="expertise-grid" className="bg-white">
     <div className="text-center mb-12 md:mb-16 max-w-7xl mx-auto">
       <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-        Our <span style={{ color: ACCENT_COLOR }}>Expertise</span>
+        Our <span style={{ color: PRIMARY_COLOR }}>Expertise</span>
       </h2>
       <div className="w-24 h-1 mx-auto mt-4 mb-8 rounded-full" style={{ backgroundColor: PRIMARY_COLOR }}></div>
       <p className="text-lg text-gray-600 leading-relaxed">

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Phone, Mail, MapPin, Loader2, Send, CheckCircle } from "lucide-react"
-import { PRIMARY_COLOR, ACCENT_COLOR } from "@/lib/constants"
+import { PRIMARY_COLOR, ACCENT_COLOR , TEAL} from "@/lib/constants"
 import SectionWrapper from "@/components/SectionWrapper"
 
 const ContactPage = () => {
@@ -29,11 +29,11 @@ const ContactPage = () => {
   return (
     <SectionWrapper id="contact-page" className="bg-gray-100">
       <div className="text-center mb-12">
-        <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-2" style={{ color: ACCENT_COLOR }}>
+        <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-2" style={{ color: TEAL }}>
           Get in touch
         </p>
         <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-          Ready to Ship? <span style={{ color: ACCENT_COLOR }}>Contact Us</span>
+          Ready to Ship? <span style={{ color: PRIMARY_COLOR }}>Contact Us</span>
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           Let's discuss your freight forwarding and logistics needs today.
@@ -164,7 +164,7 @@ const ContactPage = () => {
           <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Contact Details</h3>
 
           <div className="flex items-start space-x-4">
-            <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: ACCENT_COLOR }} />
+            <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: TEAL }} />
             <div>
               <p className="text-sm font-medium text-gray-500 uppercase">Call Us</p>
               <a
@@ -179,7 +179,7 @@ const ContactPage = () => {
           </div>
 
           <div className="flex items-start space-x-4">
-            <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: ACCENT_COLOR }} />
+            <Mail className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: TEAL }} />
             <div>
               <p className="text-sm font-medium text-gray-500 uppercase">Email Us</p>
               <a
@@ -194,7 +194,7 @@ const ContactPage = () => {
           </div>
 
           <div className="flex items-start space-x-4">
-            <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: ACCENT_COLOR }} />
+            <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: TEAL }} />
             <div>
               <p className="text-sm font-medium text-gray-500 uppercase">Our Location</p>
               <p className="text-lg font-medium text-blue-800">
