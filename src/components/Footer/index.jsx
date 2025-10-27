@@ -73,7 +73,8 @@ const Footer = () => {
                       color: PRIMARY_COLOR,
                       "--primary": PRIMARY_COLOR,
                       backgroundColor: "transparent",
-                      border: "none"
+                      border: "none",
+                      outline: "none"
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
                     onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}

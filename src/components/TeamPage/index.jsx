@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { PRIMARY_COLOR, ACCENT_COLOR, TEAM_MEMBERS,TEAL } from "@/lib/constants";
 import SectionWrapper from "@/components/SectionWrapper";
 import TeamMember from "@/components/TeamMember";
-import "./team.css";
+// import "./team.css";
 
 const TeamPage = () => {
   return (
@@ -26,7 +26,7 @@ const TeamPage = () => {
 
       <div className="">
         {/* Team Members Grid */}
-        <div className="team-members grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 pl-40 pr-40 justify-center">
+        <div className="team-members grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 sm:pl-0 md:pl-40 lg:pl-40 sm:pr-0 lg:pr-40 justify-center">
           {TEAM_MEMBERS.map((member, index) => (
             <TeamMember
               key={member.name}

@@ -6,6 +6,8 @@ import AboutUsPage from "@/components/AboutUsPage";
 import TeamPage from "@/components/TeamPage";
 import ServicesPage from "@/components/ServicesPage";
 import ContactPage from "@/components/ContactPage";
+import ServiceDetailPage from "@/components/ServiceDetailPage";
+
 
 const App = () => {
   return (
@@ -15,11 +17,12 @@ const App = () => {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutUsPage />} />
-            <Route path="/team" element={<TeamPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutUsPage />} />
+              <Route path="/team" element={<TeamPage />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/services/:serviceId" element={<ServiceDetailPage />} />  {/* ✅ Dynamic route */}
+              <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />

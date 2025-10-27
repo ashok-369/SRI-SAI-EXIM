@@ -34,58 +34,6 @@ export const PAGE_LINKS = [
   { name: "Contact", page: "contact" },
 ]
 
-export const SERVICE_CARDS = [
-  {
-    id: "air-freight",
-    icon: Plane,
-    title: "Air Freight",
-    description: "Fast, reliable, and secure air transportation for time-critical and high-value shipments worldwide.",
-    shortDescription: "We make your relocation as smooth as you need.",
-    imageUrl: "https://srisaiexim.in/images/air-freight.jpg",
-  },
-  {
-    id: "ocean-freight",
-    icon: Ship,
-    title: "Ocean Freight",
-    description: "Cost-effective and flexible seafreight solutions for FCL and LCL, ensuring global reach.",
-    shortDescription: "We make your relocation as smooth as you need.",
-    imageUrl: "https://srisaiexim.in/images/ocean-freight.jpg",
-  },
-  {
-    id: "surface-transportation",
-    icon: Truck,
-    title: "Surface Transportation",
-    description: "Efficient road and rail cargo services, ensuring timely and damage-free delivery across land routes.",
-    shortDescription: "We make your relocation as smooth as you need.",
-    imageUrl: "https://srisaiexim.in/images/surface-transportation.jpg",
-  },
-  {
-    id: "logistics-transportation",
-    icon: Zap,
-    title: "Logistics & Transportation",
-    description: "End-to-end supply chain management, optimizing flow from origin to the final point of delivery.",
-    shortDescription: "We make your relocation as smooth as you need.",
-    imageUrl: "https://srisaiexim.in/images/logistics-and-transportation.jpg",
-  },
-  {
-    id: "customs-brokerage",
-    icon: FileText,
-    title: "Customs Brokerage",
-    description: "Expert customs clearance and regulatory compliance to navigate complex international trade smoothly.",
-    shortDescription: "We make your relocation as smooth as you need.",
-    imageUrl: "https://srisaiexim.in/images/custom-brokerage.jpg",
-  },
-  {
-    id: "dg-certification",
-    icon: Package,
-    title: "DG Certification & Packing",
-    description:
-      "Certified and specialized handling of Dangerous Goods compliant with global safety standards.",
-    shortDescription: "We make your relocation as smooth as you need.",
-    imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
-  },
-]
-
 export const TEAM_MEMBERS = [
   {
     name: "Mr. Keerthi",
@@ -98,5 +46,152 @@ export const TEAM_MEMBERS = [
     title: "Operational Manager",
     image: "https://srisaiexim.in/images/ganavi.jpg",
     motto: "Streamlining operations for maximum efficiency and client satisfaction.",
+  },
+]
+
+export const SERVICE_CARDS = [
+  {
+    id: "air-freight",
+    icon: Plane,
+    title: "Air Freight",
+    description: "Fast, reliable, and secure air transportation for time-critical and high-value shipments worldwide.",
+    shortDescription: "Sri Sai Exim's specialist air freight teams constantly monitor direct flights and offer just-in-time deliveries to reduce inventory costs.",
+    imageUrl: "https://srisaiexim.in/images/air-freight.jpg",
+    content: {
+      hero: "Seamless Global Air Cargo Management",
+      intro: "Sri Sai Exim specialist air freight teams constantly monitor direct flights and liaise with airlines and agents. With an extensive warehouse network, we also offer temporary storage and just-in-time deliveries that will measurably reduce your inventory costs.",
+      services: [
+        "Worldwide Air Freight",
+        "Global Preferred Carriers",
+        "Packaging, crating, and short-term warehousing",
+        "Handling of heavy and/or dangerous goods / project cargo",
+        "Perishables, Dangerous Goods, Sensitive Cargo Handling",
+        "Customs Clearance",
+        "Warehousing",
+        "Packaging & Pallet Services",
+        "Optional Storage Facilities",
+        "Proof of Delivery Services",
+        "Freight Collect Services",
+        "Door-To-Door Services",
+      ],
+      contact: {
+        phone: "+91 63637 32815",
+        emailLink: "mailto:info@srisaiexim.com",
+      },
+    },
+  },
+  {
+    id: "ocean-freight",
+    icon: Ship,
+    title: "Ocean Freight",
+    description: "Cost-effective and flexible seafreight solutions for FCL (Full Container Load) and LCL (Less than Container Load), ensuring global reach.",
+    shortDescription: "We handle large loads of goods by sea using containers, ideal for shipments over 100kg.",
+    imageUrl: "https://srisaiexim.in/images/ocean-freight.jpg",
+    content: {
+      hero: "Reliable, High-Volume Global Shipping",
+      intro: "Sri Sai Exim handling ocean freight is the method of transporting often large loads of goods by sea – putting cargo in large containers which are loaded onto vessels. As a general rule, shipments weighing more than 100kg – or consisting of multiple cartons – will be sent by sea freight.",
+      services: [
+        "Transportation (Inland Transport)",
+        "Warehousing",
+        "Packing, Loading and Stuffing",
+        "Perishables, Dangerous Goods, Sensitive Cargo Handling",
+        "Door-To-Door Services",
+        "LCL Console movements (Less than Container Load)",
+        "Tank Containers (for liquids, gases, powders)",
+        "Heavy Duty Containers (for specialized cargo)",
+      ],
+      contact: {
+        phone: "+91 63637 32815",
+        emailLink: "mailto:info@srisaiexim.com",
+      },
+    },
+  },
+  {
+    id: "surface-transportation",
+    icon: Truck,
+    title: "Surface Transportation",
+    description: "Efficient road and rail cargo services, ensuring timely and damage-free delivery across land routes.",
+    shortDescription: "We provide safe, efficient distribution by road, rail, and integrated freight, backed by our own and leased fleet.",
+    imageUrl: "https://srisaiexim.in/images/surface-transportation.jpg",
+    content: {
+      hero: "Seamless Road, Rail, and Integrated Freight",
+      intro: "Surface transportation means any conveyance of people, goods, or commodities using one or more surface transportation modes. Surface transportation primarily means the movement of people and cargo by road, train or ship. With focus and expertise, we provide safe and efficient distribution of a broad variety of goods which includes raw materials, finished and consumer goods, machinery, documents and foodstuffs with support of our dedicated Road Transport team.",
+      services: [
+        "Tailor-made Road Freight Solutions",
+        "Distribution of Raw Materials, Finished Goods, and Machinery",
+        "Fleet of own and leased trucks",
+        "Seamless Sea-Road Movements",
+        "Efficient Air-Road Movements",
+        "Highest quality of customer service and perfect handling",
+      ],
+      contact: {
+        phone: "+91 63637 32815",
+        emailLink: "mailto:info@srisaiexim.com",
+      },
+    },
+  },
+  {
+    id: "logistics-transportation",
+    icon: Zap,
+    title: "Logistics & Transportation",
+    description: "End-to-end supply chain management, optimizing flow from origin to the final point of delivery.",
+    shortDescription: "Expert, integrated supply chain management and transportation solutions.",
+    imageUrl: "https://srisaiexim.in/images/logistics-and-transportation.jpg",
+    content: {
+      hero: "Comprehensive Global Services (Details Available on Contact)",
+      intro: "The full details of our integrated Logistics and Transportation services page are currently under development. However, our expert teams are fully operational and ready to design a custom logistics strategy for you right now, encompassing the full spectrum of movement: Air, Ocean, and Surface.",
+      services: [
+        "End-to-End Supply Chain Management (Available upon contact)",
+        "Integrated Multimodal Planning",
+        "Consultation on Supply Chain Optimization",
+        "Immediate service available via phone/email"
+      ],
+      contact: {
+        phone: "+91 63637 32815",
+        emailLink: "mailto:info@srisaiexim.com",
+      },
+    },
+  },
+  {
+    id: "customs-brokerage",
+    icon: FileText,
+    title: "Customs Brokerage",
+    description: "Expert customs clearance and regulatory compliance to navigate complex international trade smoothly.",
+    shortDescription: "Licensed brokerage services to minimize delays and ensure smooth international trade.",
+    imageUrl: "https://srisaiexim.in/images/custom-brokerage.jpg",
+    content: {
+      hero: "Expert Clearance and Regulatory Compliance (Details Available on Contact)",
+      intro: "Comming Soon...",
+      services: [
+       
+      ],
+      contact: {
+        phone: "+91 63637 32815",
+        emailLink: "mailto:info@srisaiexim.com",
+      },
+    },
+  },
+  {
+    id: "dg-certification",
+    icon: Package,
+    title: "DG Certification & Packing",
+    description: "Certified and specialized handling of Dangerous Goods compliant with global safety standards.",
+    shortDescription: "Specialized handling and certification for safe transport of hazardous materials.",
+    imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
+    content: {
+      hero: "Expert Handling of Dangerous Goods (Details Available on Contact)",
+      intro: "The full details of our specialized Dangerous Goods (DG) Certification and Packing services page are currently being developed. Our certified specialists ensure the safe, legal, and compliant handling, packing, and documentation of hazardous materials according to all national and international regulations (IATA, IMDG, ADR).",
+      services: [
+        "Classification and Identification of Hazardous Materials",
+        "Correct Packing and Labeling",
+        "Preparation of Shipper's Declaration for Dangerous Goods",
+        "Inspection and Certification for Transport Readiness",
+        "Immediate service available via phone/email"
+      ],
+      contact: {
+        phone: "+91 63637 32815",
+        emailLink: "mailto:info@srisaiexim.com",
+      },
+    },
   },
 ]
