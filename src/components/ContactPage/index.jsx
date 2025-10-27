@@ -1,35 +1,48 @@
-"use client"
-
-import { useState } from "react"
-import { Phone, Mail, MapPin, Loader2, Send, CheckCircle } from "lucide-react"
-import { PRIMARY_COLOR, ACCENT_COLOR , TEAL} from "@/lib/constants"
-import SectionWrapper from "@/components/SectionWrapper"
+import { useState } from "react";
+import { Phone, Mail, MapPin, Loader2, Send, CheckCircle } from "lucide-react";
+import { PRIMARY_COLOR, ACCENT_COLOR, TEAL } from "@/lib/constants";
+import SectionWrapper from "@/components/SectionWrapper";
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", location: "", message: "" })
-  const [status, setStatus] = useState("")
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    location: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setStatus("sending")
+    e.preventDefault();
+    setStatus("sending");
     setTimeout(() => {
-      console.log("Form Submitted:", formData)
-      setStatus("success")
+      console.log("Form Submitted:", formData);
+      setStatus("success");
       setTimeout(() => {
-        setFormData({ name: "", email: "", phone: "", location: "", message: "" })
-        setStatus("")
-      }, 3000)
-    }, 1500)
-  }
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          location: "",
+          message: "",
+        });
+        setStatus("");
+      }, 3000);
+    }, 1500);
+  };
 
   return (
     <SectionWrapper id="contact-page" className="bg-gray-100">
       <div className="text-center mb-12">
-        <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-2" style={{ color: TEAL }}>
+        <p
+          className="text-sm font-semibold uppercase tracking-wider mb-2"
+          style={{ color: TEAL }}
+        >
           Get in touch
         </p>
         <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
@@ -41,69 +54,42 @@ const ContactPage = () => {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-        {/* Contact Form - Left Column */}
+        {/* Contact Form */}
         <div className="p-8 bg-white rounded-xl shadow-2xl">
           <form onSubmit={handleSubmit} className="space-y-6">
+            {["name", "email", "phone", "location"].map((field) => (
+              <div key={field}>
+                <label
+                  htmlFor={field}
+                  className="block text-sm font-medium text-gray-700 capitalize"
+                >
+                  {field === "location"
+                    ? "Origin/Destination (City/Port)"
+                    : field === "phone"
+                    ? "Phone Number"
+                    : field === "email"
+                    ? "Email Address"
+                    : "Full Name"}
+                </label>
+                <input
+                  type={field === "email" ? "email" : field === "phone" ? "tel" : "text"}
+                  name={field}
+                  id={field}
+                  value={formData[field]}
+                  onChange={handleChange}
+                  required={["name", "email", "message"].includes(field)}
+                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary transition"
+                  style={{ "--primary": PRIMARY_COLOR }}
+                />
+              </div>
+            ))}
+
+            {/* Message box */}
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Full Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary transition"
-                style={{ "--primary": PRIMARY_COLOR }}
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email Address
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary transition"
-                style={{ "--primary": PRIMARY_COLOR }}
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary transition"
-                style={{ "--primary": PRIMARY_COLOR }}
-              />
-            </div>
-            <div>
-              <label htmlFor="location" className="block text-sm font-medium text-gray-700">
-                Origin/Destination (City/Port)
-              </label>
-              <input
-                type="text"
-                name="location"
-                id="location"
-                value={formData.location}
-                onChange={handleChange}
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary transition"
-                style={{ "--primary": PRIMARY_COLOR }}
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Your Inquiry/Cargo Details
               </label>
               <textarea
@@ -128,13 +114,21 @@ const ContactPage = () => {
             <button
               type="submit"
               disabled={status === "sending" || status === "success"}
-              className={`w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-bold rounded-lg shadow-lg text-white transition duration-300 ${status === "sending" || status === "success" ? "opacity-60 cursor-not-allowed" : "hover:scale-[1.01] hover:shadow-xl"}`}
-              style={{ backgroundColor: status === "success" ? "#10B981" : PRIMARY_COLOR }}
+              className={`w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-bold rounded-lg shadow-lg text-white transition duration-300 ${
+                status === "sending" || status === "success"
+                  ? "opacity-60 cursor-not-allowed"
+                  : "hover:scale-[1.01] hover:shadow-xl"
+              }`}
+              style={{
+                backgroundColor: status === "success" ? "#10B981" : PRIMARY_COLOR,
+              }}
               onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = status === "success" ? "#059669" : ACCENT_COLOR)
+                (e.currentTarget.style.backgroundColor =
+                  status === "success" ? "#059669" : TEAL)
               }
               onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = status === "success" ? "#10B981" : PRIMARY_COLOR)
+                (e.currentTarget.style.backgroundColor =
+                  status === "success" ? "#10B981" : PRIMARY_COLOR)
               }
             >
               {status === "sending" ? (
@@ -156,12 +150,14 @@ const ContactPage = () => {
           </form>
         </div>
 
-        {/* Contact Info - Right Column */}
+        {/* Contact Info */}
         <div
           className="space-y-8 p-8 lg:p-10 rounded-xl shadow-inner border-t-4"
           style={{ borderColor: PRIMARY_COLOR, backgroundColor: "#FFFFFF" }}
         >
-          <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Contact Details</h3>
+          <h3 className="text-3xl font-bold text-gray-900 mb-6">
+            Our Contact Details
+          </h3>
 
           <div className="flex items-start space-x-4">
             <Phone className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: TEAL }} />
@@ -196,7 +192,9 @@ const ContactPage = () => {
           <div className="flex items-start space-x-4">
             <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: TEAL }} />
             <div>
-              <p className="text-sm font-medium text-gray-500 uppercase">Our Location</p>
+              <p className="text-sm font-medium text-gray-500 uppercase">
+                Our Location
+              </p>
               <p className="text-lg font-medium text-blue-800">
                 No. 11/1, II Cross, 10th Main, Goraguntepalya, <br />
                 Bengaluru, Karnataka 560022
@@ -206,7 +204,7 @@ const ContactPage = () => {
         </div>
       </div>
     </SectionWrapper>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

@@ -1,13 +1,18 @@
 import { MapPin, Phone, Mail } from "lucide-react"
-import { PRIMARY_COLOR, ACCENT_COLOR,TEAL, DARK_BLUE,VIOLET, PAGE_LINKS, SERVICE_CARDS, COMPANY_NAME } from "@/lib/constants"
+import { Link } from "react-router-dom"
+import {
+  PRIMARY_COLOR,
+  ACCENT_COLOR,
+  TEAL,
+  DARK_BLUE,
+  VIOLET,
+  PAGE_LINKS,
+  SERVICE_CARDS,
+  COMPANY_NAME
+} from "@/lib/constants"
 import SriSaiEximLogo from "@/components/SriSaiEximLogo"
 
-const Footer = ({ setPage }) => {
-  const handleLinkClick = (page) => {
-    setPage(page)
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
-
+const Footer = () => {
   return (
     <footer
       className="text-white pt-16 pb-8 font-poppins border-t-4"
@@ -17,7 +22,9 @@ const Footer = ({ setPage }) => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-10">
           {/* Column 1: Logo & Mission */}
           <div className="col-span-2 md:col-span-1 space-y-4">
-            <SriSaiEximLogo className="w-8 h-8" onClick={() => handleLinkClick("home")} />
+            <Link to="/">
+              <SriSaiEximLogo className="w-8 h-8 cursor-pointer" />
+            </Link>
             <p className="text-sm text-gray-900 max-w-xs">
               Dedicated to providing hassle-free, timely, and cost-effective logistics and customs solutions worldwide.
             </p>
@@ -30,16 +37,22 @@ const Footer = ({ setPage }) => {
             </h4>
             <ul className="space-y-2 text-sm">
               {PAGE_LINKS.map((link) => (
-                <li key={link.page}>
-                  <button
-                    onClick={() => handleLinkClick(link.page)}
-                    className="text-gray-400 hover:text-primary transition duration-300 text-left"
-                    style={{ color: PRIMARY_COLOR, "--primary": PRIMARY_COLOR , backgroundColor : "transparent" , border : "none" ,}}
+                <li key={link.page} style={{paddingBottom: "12px",}}>
+                  <Link
+                    to={`/${link.page === "home" ? "" : link.page}`}
+                    className="text-gray-400 transition duration-300 hover:text-primary "
+                    style={{
+                      color: PRIMARY_COLOR,
+                      "--primary": PRIMARY_COLOR,
+                      backgroundColor: "transparent",
+                      border: "none",
+                      
+                    }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
                     onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
                   >
                     {link.name}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -52,16 +65,21 @@ const Footer = ({ setPage }) => {
             </h4>
             <ul className="space-y-2 text-sm">
               {SERVICE_CARDS.map((service) => (
-                <li key={service.id}>
-                  <button
-                    onClick={() => handleLinkClick("services")}
-                    className="text-gray-400 hover:text-primary transition duration-300 text-left"
-                    style={{ color: PRIMARY_COLOR, "--primary": PRIMARY_COLOR , backgroundColor : "transparent" , border : "none" ,}}
+                <li key={service.id}  style={{paddingBottom: "12px",}}>
+                  <Link
+                    to="/services"
+                    className="text-gray-400 transition duration-300 hover:text-primary"
+                    style={{
+                      color: PRIMARY_COLOR,
+                      "--primary": PRIMARY_COLOR,
+                      backgroundColor: "transparent",
+                      border: "none"
+                    }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
                     onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
                   >
                     {service.title}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -69,7 +87,7 @@ const Footer = ({ setPage }) => {
 
           {/* Column 4: Contact Info */}
           <div className="space-y-4 col-span-2 md:col-span-1">
-            <h4 className="text-lg font-bold mb-3" style={{ color: TEAL}}>
+            <h4 className="text-lg font-bold mb-3" style={{ color: TEAL }}>
               Reach Us
             </h4>
             <div className="flex items-center space-x-3 text-sm">
@@ -77,7 +95,7 @@ const Footer = ({ setPage }) => {
               <p className="text-gray-900">Goraguntepalya, Bengaluru, 560022</p>
             </div>
             <div className="flex items-center space-x-3 text-sm">
-              <Phone className="w-5 h-5 text-accent" style={{ color: VIOLET}} />
+              <Phone className="w-5 h-5 text-accent" style={{ color: VIOLET }} />
               <a
                 href="tel:+916363732815"
                 className="text-gray-400 hover:text-primary transition"
