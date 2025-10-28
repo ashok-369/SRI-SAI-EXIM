@@ -8,7 +8,6 @@ import {
   ACCENT_COLOR,
   PAGE_LINKS,
   SERVICE_CARDS,
-  VIOLET,
   TEAL,
 } from "@/lib/constants";
 import SriSaiEximLogo from "@/components/SriSaiEximLogo";
@@ -29,11 +28,13 @@ const FocusResetStyle = () => (
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false); // for mobile dropdown
   const navigate = useNavigate();
 
   const handleNavigate = (path) => {
     navigate(path);
     setIsMenuOpen(false);
+    setIsServicesOpen(false);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -60,13 +61,18 @@ const Header = () => {
                     <button
                       onClick={() => handleNavigate("/services")}
                       className="text-[#646CFF] hover:text-primary transition duration-300 font-medium text-base py-4 flex items-center focus:outline-none focus-ring-visible"
-                      style={{ "--primary": PRIMARY_COLOR ,backgroundColor: "transparent", outline: "none", border: "none",}}
+                      style={{
+                        "--primary": PRIMARY_COLOR,
+                        backgroundColor: "transparent",
+                        outline: "none",
+                        border: "none",
+                      }}
                     >
                       {item.name}
                       <ChevronDown className="w-3 h-3 ml-1 transition-transform duration-300 group-hover:rotate-180" />
                     </button>
 
-                    {/* Dropdown Menu */}
+                    {/* Desktop Dropdown */}
                     <div
                       className="absolute top-full -left-4 mt-0 w-72 bg-white rounded-lg shadow-xl overflow-hidden transition-all duration-300 ease-in-out transform scale-y-0 opacity-0 origin-top group-hover:scale-y-100 group-hover:opacity-100"
                       style={{ zIndex: 60 }}
@@ -79,7 +85,11 @@ const Header = () => {
                             key={service.id}
                             onClick={() => handleNavigate(servicePath)}
                             className="w-full text-left flex items-center px-4 py-3 text-sm text-gray-700 hover:text-primary transition duration-200 focus:outline-none focus-ring-visible"
-                            style={{ backgroundColor: "transparent",ackgroundColor: "transparent", outline: "none", border: "none", }}
+                            style={{
+                              backgroundColor: "transparent",
+                              outline: "none",
+                              border: "none",
+                            }}
                           >
                             <Icon
                               className="w-4 h-4 mr-3 text-accent"
@@ -115,7 +125,7 @@ const Header = () => {
               <button
                 onClick={() => handleNavigate("/contact")}
                 className="px-10 py-2 text-base font-semibold rounded-lg text-white transition duration-300 transform hover:scale-[1.02] shadow-lg focus:outline-none focus-ring-visible whitespace-nowrap"
-                style={{ backgroundColor: PRIMARY_COLOR }}
+                style={{ backgroundColor: PRIMARY_COLOR , }}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = TEAL)}
                 onMouseLeave={(e) =>
                   (e.currentTarget.style.backgroundColor = PRIMARY_COLOR)
@@ -129,7 +139,9 @@ const Header = () => {
           {/* Mobile Menu Toggle */}
           <button
             className="md:hidden text-gray-600 hover:text-primary p-2 focus:outline-none focus-ring-visible"
-            style={{ "--primary": PRIMARY_COLOR }}
+            style={{ "--primary": PRIMARY_COLOR , backgroundColor: "transparent",
+                              outline: "none",
+                              border: "none",}}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -146,39 +158,64 @@ const Header = () => {
         <div className="px-4 pt-2 pb-4 space-y-1 bg-white border-t border-gray-100">
           {PAGE_LINKS.map((item) => (
             <React.Fragment key={item.page}>
-              <button
-                onClick={() =>
-                  handleNavigate(item.page === "home" ? "/" : `/${item.page.toLowerCase()}`)
-                }
-                className="w-full text-left block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-md focus:outline-none focus-ring-visible"
-                style={{ "--primary": PRIMARY_COLOR, backgroundColor: "transparent" }}
-              >
-                {item.name}
-              </button>
-              {item.page === "services" && (
-                <div className="pl-6 pt-1 pb-2 space-y-1 ml-4">
-                  <p className="text-xs font-semibold uppercase text-gray-500 mb-1">
-                    Our Solutions
-                  </p>
-                  {SERVICE_CARDS.map((service) => {
-                    const Icon = service.icon;
-                    const servicePath = `/services/${service.id}`;
-                    return (
-                      <button
-                        key={service.id}
-                        onClick={() => handleNavigate(servicePath)}
-                        className="w-full text-left flex items-center px-3 py-1 text-sm text-gray-600 rounded-md focus:outline-none focus-ring-visible"
-                        style={{ backgroundColor: "transparent" }}
-                      >
-                        <Icon
-                          className="w-4 h-4 mr-2 text-primary"
-                          style={{ color: PRIMARY_COLOR }}
-                        />
-                        {service.title}
-                      </button>
-                    );
-                  })}
-                </div>
+              {item.page === "services" ? (
+                <>
+                  {/* Toggle Button */}
+                  <button
+                    onClick={() => setIsServicesOpen(!isServicesOpen)}
+                    className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-md focus:outline-none focus-ring-visible"
+                    style={{ "--primary": PRIMARY_COLOR , backgroundColor: "transparent",
+                              outline: "none",
+                              border: "none", }}
+                  >
+                    <span>{item.name}</span>
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform duration-200 ${
+                        isServicesOpen ? "rotate-180" : "rotate-0"
+                      }`}
+                    />
+                  </button>
+
+                  {/* Collapsible Dropdown */}
+                  <div
+                    className={`pl-6 pt-1 pb-2 ml-4 overflow-hidden transition-all duration-300 ${
+                      isServicesOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    {SERVICE_CARDS.map((service) => {
+                      const Icon = service.icon;
+                      const servicePath = `/services/${service.id}`;
+                      return (
+                        <button
+                          key={service.id}
+                          onClick={() => handleNavigate(servicePath)}
+                          className="w-full text-left flex items-center px-3 py-1 text-sm text-gray-600 rounded-md hover:text-primary focus:outline-none focus-ring-visible"
+                          style={{ backgroundColor: "transparent" }}
+                        >
+                          <Icon
+                            className="w-4 h-4 mr-2 text-primary"
+                            style={{ color: PRIMARY_COLOR }}
+                          />
+                          {service.title}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </>
+              ) : (
+                <button
+                  onClick={() =>
+                    handleNavigate(
+                      item.page === "home" ? "/" : `/${item.page.toLowerCase()}`
+                    )
+                  }
+                  className="w-full text-left block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary rounded-md focus:outline-none focus-ring-visible"
+                  style={{ "--primary": PRIMARY_COLOR, backgroundColor: "transparent", 
+                              outline: "none",
+                              border: "none", }}
+                >
+                  {item.name}
+                </button>
               )}
             </React.Fragment>
           ))}
@@ -197,8 +234,12 @@ const Header = () => {
               onClick={() => handleNavigate("/contact")}
               className="w-full px-6 py-2 text-base font-semibold rounded-lg text-white transition duration-300 shadow-lg focus:outline-none focus-ring-visible"
               style={{ backgroundColor: PRIMARY_COLOR }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = ACCENT_COLOR)}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = PRIMARY_COLOR)}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.backgroundColor = TEAL)
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.backgroundColor = PRIMARY_COLOR)
+              }
             >
               Get A Quote
             </button>

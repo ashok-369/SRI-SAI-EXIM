@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
 import { SERVICE_CARDS } from "@/lib/constants";
 
-const DEFAULT_IMAGE = "/images/default-service.jpg";
+//const  logisticsTransportationImageUrl= "https://srisaiexim.in/images/logistics-and-transportation.jpg"
+const DEFAULT_IMAGE = "https://srisaiexim.in/images/sri-sai-exim-banner-i.jpg";
 const DEFAULT_TITLE = "Service Coming Soon";
 const DEFAULT_INTRO =
   "We’re working on adding detailed information for this service. Stay tuned for updates.";
@@ -39,7 +40,7 @@ const ServiceDetailPage = () => {
         alt={title}
         className="mb-4 w-full rounded-lg"
       />
-      <p className="mb-4">{intro}</p>
+      <p className="mb-4"  style={{ fontWeight: 500 }}>{intro}</p>
       <ul className="list-disc ml-6 space-y-1">
         {services.map((item, i) => (
           <li key={i}>{item}</li>

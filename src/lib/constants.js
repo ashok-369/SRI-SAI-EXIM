@@ -138,13 +138,12 @@ export const SERVICE_CARDS = [
     shortDescription: "Expert, integrated supply chain management and transportation solutions.",
     imageUrl: "https://srisaiexim.in/images/logistics-and-transportation.jpg",
     content: {
-      hero: "Comprehensive Global Services (Details Available on Contact)",
-      intro: "The full details of our integrated Logistics and Transportation services page are currently under development. However, our expert teams are fully operational and ready to design a custom logistics strategy for you right now, encompassing the full spectrum of movement: Air, Ocean, and Surface.",
+      hero: "Service Coming Soon",
+      intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
       services: [
-        "End-to-End Supply Chain Management (Available upon contact)",
-        "Integrated Multimodal Planning",
-        "Consultation on Supply Chain Optimization",
-        "Immediate service available via phone/email"
+        "Reliable logistics solutions",
+        "Professional support",
+        "Timely updates",
       ],
       contact: {
         phone: "+91 63637 32815",
@@ -153,17 +152,19 @@ export const SERVICE_CARDS = [
     },
   },
   {
-    id: "customs-brokerage",
+    id: "customs-brokerag",
     icon: FileText,
     title: "Customs Brokerage",
     description: "Expert customs clearance and regulatory compliance to navigate complex international trade smoothly.",
     shortDescription: "Licensed brokerage services to minimize delays and ensure smooth international trade.",
-    imageUrl: "https://srisaiexim.in/images/custom-brokerage.jpg",
+     imageUrl: "https://srisaiexim.in/images/custom-brokerage.jpg",
     content: {
-      hero: "Expert Clearance and Regulatory Compliance (Details Available on Contact)",
-      intro: "Comming Soon...",
+      hero: "Service Coming Soon",
+      intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
       services: [
-       
+        "Reliable logistics solutions",
+        "Professional support",
+        "Timely updates",
       ],
       contact: {
         phone: "+91 63637 32815",
@@ -175,18 +176,16 @@ export const SERVICE_CARDS = [
     id: "dg-certification",
     icon: Package,
     title: "DG Certification & Packing",
-    description: "Certified and specialized handling of Dangerous Goods compliant with global safety standards.",
+    description: "We’re working on adding detailed information for this service. Stay tuned for updates.",
     shortDescription: "Specialized handling and certification for safe transport of hazardous materials.",
     imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
     content: {
-      hero: "Expert Handling of Dangerous Goods (Details Available on Contact)",
-      intro: "The full details of our specialized Dangerous Goods (DG) Certification and Packing services page are currently being developed. Our certified specialists ensure the safe, legal, and compliant handling, packing, and documentation of hazardous materials according to all national and international regulations (IATA, IMDG, ADR).",
+      hero: "Service Coming Soon",
+      intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
       services: [
-        "Classification and Identification of Hazardous Materials",
-        "Correct Packing and Labeling",
-        "Preparation of Shipper's Declaration for Dangerous Goods",
-        "Inspection and Certification for Transport Readiness",
-        "Immediate service available via phone/email"
+        "Reliable logistics solutions",
+        "Professional support",
+        "Timely updates",
       ],
       contact: {
         phone: "+91 63637 32815",

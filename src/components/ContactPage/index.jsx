@@ -196,8 +196,7 @@ const ContactPage = () => {
                 Our Location
               </p>
               <p className="text-lg font-medium text-blue-800">
-                No. 11/1, II Cross, 10th Main, Goraguntepalya, <br />
-                Bengaluru, Karnataka 560022
+                No. 310, F Block,10TH Cross, Sahakaranagar,Bengaluru - 560092
               </p>
             </div>
           </div>
