@@ -26,7 +26,7 @@ const Footer = () => {
             <Link to="/" className="inline-block">
               <SriSaiEximLogo className="w-8 h-8 cursor-pointer" />
             </Link>
-            <p className="text-sm text-gray-900 max-w-xs">
+            <p className="text-sm text-[#0047AB] max-w-xs">   {/* gray-900  */}
               Dedicated to providing hassle-free, timely, and cost-effective logistics and customs solutions worldwide.
             </p>
           </div>
@@ -94,7 +94,7 @@ const Footer = () => {
             </h4>
             <div className="flex items-center space-x-3 text-sm">
               <MapPin className="w-5 h-5" style={{ color: VIOLET }} />
-              <p className="text-gray-900">Sahakaranagar,Bengaluru - 560092</p>
+              <p className="text-[#0047AB]">Sahakaranagar,Bengaluru - 560092</p>  {/* gray-900 */}
             </div>
             <div className="flex items-center space-x-3 text-sm">
               <Phone className="w-5 h-5" style={{ color: VIOLET }} />

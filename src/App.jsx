@@ -36,10 +36,23 @@ export default App;
 const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
   
-  body { font-family: 'Poppins', sans-serif; }
+  * {
+    box-sizing: border-box;
+  }
 
-  html {
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+  }
+
+  #root, main, header, section {
+    width: 100%;
+    max-width: 100%;
   }
 
   @keyframes logo-scroll {
