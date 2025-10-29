@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { SERVICE_CARDS } from "@/lib/constants";
 
-//const  logisticsTransportationImageUrl= "https://srisaiexim.in/images/logistics-and-transportation.jpg"
 const DEFAULT_IMAGE = "https://srisaiexim.in/images/sri-sai-exim-banner-i.jpg";
 const DEFAULT_TITLE = "Service Coming Soon";
 const DEFAULT_INTRO =
@@ -12,14 +11,13 @@ const DEFAULT_SERVICES = [
   "Timely updates",
 ];
 const DEFAULT_CONTACT = {
-  phone: "+91 63637 32815",
-  email: "support@srisaiexim.in",
+  phone: "+91 9972314988",
+  email: "sales@srisaiexim.in",
 };
 
 const ServiceDetailPage = () => {
   const { serviceId } = useParams();
-
-  // Try to find service by ID
+  //console.log(serviceId)
   const service = SERVICE_CARDS.find((s) => s.id === serviceId);
 
   // Always provide fallback values — so all serviceId routes succeed

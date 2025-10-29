@@ -164,11 +164,11 @@ const ContactPage = () => {
             <div>
               <p className="text-sm font-medium text-gray-500 uppercase">Call Us</p>
               <a
-                href="tel:+916363732815"
+                href="tel:+919972314988"
                 className="text-lg font-semibold text-gray-800 hover:text-primary transition"
                 style={{ color: PRIMARY_COLOR }}
               >
-                +91 63637 32815
+                +91 9972314988
               </a>
               <p className="text-sm text-gray-600">Mon - Sat, 9:00 AM - 6:00 PM IST</p>
             </div>
@@ -179,11 +179,11 @@ const ContactPage = () => {
             <div>
               <p className="text-sm font-medium text-gray-500 uppercase">Email Us</p>
               <a
-                href="mailto:support@srisaiexim.in"
+                href="mailto:sales@srisaiexim.in"
                 className="text-lg font-semibold text-gray-800 hover:text-primary transition"
                 style={{ color: PRIMARY_COLOR }}
               >
-                support@srisaiexim.in
+                sales@srisaiexim.in
               </a>
               <p className="text-sm text-gray-600">We aim to respond within 24 hours.</p>
             </div>

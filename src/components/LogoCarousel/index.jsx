@@ -8,7 +8,7 @@ const LogoGrid = () => {
     <div className="py-16 bg-gray-50 border-t border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-extrabold text-gray-800 mb-12 tracking-tight sm:text-4xl">
-          Clientes
+          Clients
         </h2>
         {/* Grid layout maintained for 4 columns on desktop: grid-cols-2 for small, md:grid-cols-4 for medium/large */}
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-4 lg:gap-8">

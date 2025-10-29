@@ -107,7 +107,7 @@ const AboutUsPage = () => (
         <p className="text-base sm:text-lg font-light text-gray-800 text-center sm:text-left mb-6 sm:mb-0">
           For all inquiries, please call our specialist team at:{" "}
           <a
-            href="tel:+916363732815"
+            href="tel:+919972314988"
             className="font-bold tracking-wide hover:text-gray-900 transition duration-300 whitespace-nowrap"
             style={{ color: PRIMARY_COLOR }}
           >

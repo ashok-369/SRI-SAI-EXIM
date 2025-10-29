@@ -99,25 +99,25 @@ const Footer = () => {
             <div className="flex items-center space-x-3 text-sm">
               <Phone className="w-5 h-5" style={{ color: VIOLET }} />
               <a
-                href="tel:+916363732815"
+                href="tel:+919972314988"
                 className="transition"
                 style={{ color: PRIMARY_COLOR }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
                 onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
               >
-                +91 63637 32815
+                +91 9972314988
               </a>
             </div>
             <div className="flex items-center space-x-3 text-sm">
               <Mail className="w-5 h-5" style={{ color: VIOLET }} />
               <a
-                href="mailto:support@srisaiexim.in"
+                href="mailto:sales@srisaiexim.in"
                 className="transition"
                 style={{ color: PRIMARY_COLOR }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
                 onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
               >
-                support@srisaiexim.in
+                sales@srisaiexim.in
               </a>
             </div>
           </div>

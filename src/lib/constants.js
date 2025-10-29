@@ -41,12 +41,12 @@ export const TEAM_MEMBERS = [
     image: "https://srisaiexim.in/images/mr-keerthi.jpg",
     motto: "Leading the vision and strategic execution of global logistics.",
   },
-  {
-    name: "Ms. Ganavi S.k",
-    title: "Operational Manager",
-    image: "https://srisaiexim.in/images/ganavi.jpg",
-    motto: "Streamlining operations for maximum efficiency and client satisfaction.",
-  },
+  // {
+  //   name: "Ms. Ganavi S.k",
+  //   title: "Operational Manager",
+  //   image: "https://srisaiexim.in/images/ganavi.jpg",
+  //   motto: "Streamlining operations for maximum efficiency and client satisfaction.",
+  // },
 ]
 
 export const SERVICE_CARDS = [
@@ -75,8 +75,8 @@ export const SERVICE_CARDS = [
         "Door-To-Door Services",
       ],
       contact: {
-        phone: "+91 63637 32815",
-        emailLink: "mailto:info@srisaiexim.com",
+        phone: "+91 9972314988",
+        emailLink: "mailto:sales@srisaiexim.in",
       },
     },
   },
@@ -101,8 +101,8 @@ export const SERVICE_CARDS = [
         "Heavy Duty Containers (for specialized cargo)",
       ],
       contact: {
-        phone: "+91 63637 32815",
-        emailLink: "mailto:info@srisaiexim.com",
+        phone: "+91 9972314988",
+        emailLink: "mailto:sales@srisaiexim.in",
       },
     },
   },
@@ -125,13 +125,13 @@ export const SERVICE_CARDS = [
         "Highest quality of customer service and perfect handling",
       ],
       contact: {
-        phone: "+91 63637 32815",
-        emailLink: "mailto:info@srisaiexim.com",
+        phone: "+91 9972314988",
+        emailLink: "mailto:sales@srisaiexim.in",
       },
     },
   },
   {
-    id: "logistics-transportation",
+    id: "logistics-&-transportation",
     icon: Zap,
     title: "Logistics & Transportation",
     description: "End-to-end supply chain management, optimizing flow from origin to the final point of delivery.",
@@ -146,13 +146,13 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 63637 32815",
-        emailLink: "mailto:info@srisaiexim.com",
+        phone: "+91 9972314988",
+        emailLink: "mailto:sales@srisaiexim.in",
       },
     },
   },
   {
-    id: "customs-brokerag",
+    id: "customs-brokerage",
     icon: FileText,
     title: "Customs Brokerage",
     description: "Expert customs clearance and regulatory compliance to navigate complex international trade smoothly.",
@@ -167,16 +167,16 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 63637 32815",
-        emailLink: "mailto:info@srisaiexim.com",
+        phone: "+91 9972314988",
+        emailLink: "mailto:sales@srisaiexim.in",
       },
     },
   },
   {
-    id: "dg-certification",
+    id: "dg-certification-&-packing",
     icon: Package,
     title: "DG Certification & Packing",
-    description: "We’re working on adding detailed information for this service. Stay tuned for updates.",
+    description: "Certified and specialized handling of Dangerous Goods compliant with global safety standards.",
     shortDescription: "Specialized handling and certification for safe transport of hazardous materials.",
     imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
     content: {
@@ -188,8 +188,8 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 63637 32815",
-        emailLink: "mailto:info@srisaiexim.com",
+        phone: "+91 9972314988",
+        emailLink: "mailto:sales@srisaiexim.in",
       },
     },
   },

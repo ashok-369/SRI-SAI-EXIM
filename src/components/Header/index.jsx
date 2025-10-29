@@ -223,7 +223,7 @@ const Header = () => {
           {/* Contact and CTA */}
           <div className="pt-4 space-y-3">
             <a
-              href="tel:+916363732815"
+              href="tel:+919972314988"
               className="w-full flex items-center justify-center px-6 py-2 text-base font-medium rounded-lg text-gray-700 border border-gray-300 hover:border-primary hover:text-primary transition duration-300 focus:outline-none focus-ring-visible"
               style={{ "--primary": PRIMARY_COLOR }}
             >
