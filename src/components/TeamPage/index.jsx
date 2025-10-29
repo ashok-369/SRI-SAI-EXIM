@@ -58,7 +58,7 @@ const TeamPage = () => {
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)",
               }}
             >
-              +91 63637 32815
+              +91 9972314988
             </span>{" "}
             or reach out below.
           </p>

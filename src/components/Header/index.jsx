@@ -228,7 +228,7 @@ const Header = () => {
               style={{ "--primary": PRIMARY_COLOR }}
             >
               <Phone className="w-4 h-4 mr-2" />
-              +91 63637 32815
+              +91 9972314988
             </a>
             <button
               onClick={() => handleNavigate("/contact")}

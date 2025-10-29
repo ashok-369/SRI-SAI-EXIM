@@ -111,7 +111,7 @@ const AboutUsPage = () => (
             className="font-bold tracking-wide hover:text-gray-900 transition duration-300 whitespace-nowrap"
             style={{ color: PRIMARY_COLOR }}
           >
-            +91 63637 32815
+            +91 9972314988
           </a>
         </p>
 
