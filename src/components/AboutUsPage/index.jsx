@@ -41,7 +41,7 @@ const AboutUsPage = () => (
           </span>
         </h2>
 
-        <div className="w-16 sm:w-20 h-1 mt-4 rounded-full" style={{ backgroundColor: TEAL }}></div>
+        <div className="w-16 sm:w-20 h-1 mt-4 rounded-full" style={{ backgroundColor: "#3444ffff" }}></div>
       </div>
     </div>
 
