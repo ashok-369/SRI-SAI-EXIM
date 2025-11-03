@@ -1,4 +1,6 @@
 import { Plane, Ship, Truck, Zap, FileText, Package } from "lucide-react"
+//import air_freight from "@/assets/air_freight.jpg"
+import airFreight from "@/assets/airFreight.jpg"
 
 export const COMPANY_NAME = "Sri Sai Exim"
 export const PRIMARY_COLOR = "#0047AB" // Blue
@@ -57,11 +59,16 @@ export const SERVICE_CARDS = [
     description: "Fast, reliable, and secure air transportation for time-critical and high-value shipments worldwide.",
     shortDescription: "Sri Sai Exim's specialist air freight teams constantly monitor direct flights and offer just-in-time deliveries to reduce inventory costs.",
     imageUrl: "https://srisaiexim.in/images/air-freight.jpg",
+    // imageUrl : "https://srisaiexim.in/images/sri-sai-exim-banner-i.jpg",
+    //imageUrl : `${airFreight}`,
+    BannerImageUrl:`${airFreight}`,
     content: {
       hero: "Seamless Global Air Cargo Management",
       intro: "Sri Sai Exim specialist air freight teams constantly monitor direct flights and liaise with airlines and agents. With an extensive warehouse network, we also offer temporary storage and just-in-time deliveries that will measurably reduce your inventory costs.",
       services: [
+        "Quick Deliveries on the Upcoming Flight",
         "Worldwide Air Freight",
+        "Overnight Assistance",
         "Global Preferred Carriers",
         "Packaging, crating, and short-term warehousing",
         "Handling of heavy and/or dangerous goods / project cargo",
@@ -75,7 +82,7 @@ export const SERVICE_CARDS = [
         "Door-To-Door Services",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 0123456789",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -101,7 +108,7 @@ export const SERVICE_CARDS = [
         "Heavy Duty Containers (for specialized cargo)",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 0123456789",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -125,7 +132,7 @@ export const SERVICE_CARDS = [
         "Highest quality of customer service and perfect handling",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 0123456789",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -146,7 +153,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 0123456789",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -167,7 +174,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 0123456789",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -188,7 +195,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 9972314988",
+        phone: "+91 0123456789",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },

@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { SERVICE_CARDS } from "@/lib/constants";
+// import air_freight from "@/assets/air_freight.jpg"
 
 // --- Default/Fallback Content ---
 const DEFAULT_IMAGE = "https://srisaiexim.in/images/sri-sai-exim-banner-i.jpg"; 
@@ -12,7 +13,7 @@ const DEFAULT_SERVICES = [
   "Proactive, real-time tracking and timely milestone reports",
 ];
 const DEFAULT_CONTACT = {
-  phone: "+91 9972314988",
+  phone: "+91 0123456789",
   email: "sales@srisaiexim.in",
 };
 
@@ -22,7 +23,7 @@ const ServiceDetailPage = () => {
 
   // Fallback content logic remains the same for robustness
   const title = service?.title || DEFAULT_TITLE;
-  const imageUrl = service?.imageUrl || DEFAULT_IMAGE;
+  const imageUrl = service?.BannerImageUrl || DEFAULT_IMAGE;
   const intro = service?.content?.intro || DEFAULT_INTRO;
   const services = service?.content?.services || DEFAULT_SERVICES;
   const contact = {
