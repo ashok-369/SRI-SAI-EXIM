@@ -120,25 +120,25 @@ const Header = () => {
                       </div>
                     </div>
                   ) : (
-                    <NavLink
+                  <NavLink
                       key={item.page}
                       to={item.page === "home" ? "/" : `/${item.page.toLowerCase()}`}
                       className={({ isActive }) =>
-                        `text-base font-bold transition duration-300 py-4 ${
+                        `text-base font-semibold tracking-tight py-5 px-3 transition-all duration-300 relative
+                        border-b-[3px] border-transparent 
+                        ${
                           isActive
-                            ? "text-blue-600 font-semibold"
-                            : "text-gray-600 hover:text-primary"
+                            ? "text-indigo-800 border-indigo-700" 
+                            : "text-gray-900 hover:text-indigo-500 hover:border-indigo-500/10" 
                         }`
                       }
-                      style={{ "--primary": PRIMARY_COLOR }}
-                    >
+                  >
                       {item.name}
-                    </NavLink>
+                      </NavLink>
                   )
                 )}
               </nav>
 
-              {/* Get A Quote button - Luxurious Hover/Shadow */}
               <div className="flex items-center space-x-6">
                 <button
                   onClick={() => handleNavigate("/contact")}
@@ -253,12 +253,12 @@ const Header = () => {
             {/* Contact and CTA */}
             <div className="pt-4 space-y-3">
               <a
-                href="tel:+910123456789"
+                href="tel:+919945242861"
                 className="w-full flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg text-gray-700 border border-gray-300 hover:border-primary hover:text-primary transition duration-300 focus:outline-none focus-ring-visible hover:shadow-md"
                 style={{ "--primary": PRIMARY_COLOR }}
               >
                 <Phone className="w-4 h-4 mr-2" />
-                +91 0123456789
+                +91 9945242861
               </a>
               <button
                 onClick={() => handleNavigate("/contact")}

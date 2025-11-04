@@ -26,7 +26,7 @@ const AboutUsPage = () => (
 
       <div className="relative h-full flex flex-col justify-center items-center p-6 sm:p-8 z-10 animate-fade-in-up text-center sm:text-left">
         <p className="text-gray-200 text-xs sm:text-sm tracking-widest uppercase mb-2 font-light">
-          <Link to="/" className="hover:underline" style={{color:"#3c32fcff"}} >Home</Link> /{" "}
+          <Link to="/" className="hover:underline" style={{color:"#005ef5ff" , textShadow: "0 0 0.5px black, 0 0 0.5px white" }} >Home</Link> /{" "}
           <span className="font-medium text-white" style={{ textShadow: "0 0 0.5px white, 0 0 0.5px white" }}>
             About Us
           </span>
@@ -107,11 +107,11 @@ const AboutUsPage = () => (
         <p className="text-base sm:text-lg font-light text-gray-800 text-center sm:text-left mb-6 sm:mb-0">
           For all inquiries, please call our specialist team at:{" "}
           <a
-            href="tel:+910123456789"
+            href="tel:+919945242861"
             className="font-bold tracking-wide hover:text-gray-900 transition duration-300 whitespace-nowrap"
             style={{ color: PRIMARY_COLOR }}
           >
-            +91 0123456789
+            +91 9945242861
           </a>
         </p>
 

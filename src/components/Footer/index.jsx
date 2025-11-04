@@ -99,13 +99,13 @@ const Footer = () => {
             <div className="flex items-center space-x-3 text-sm">
               <Phone className="w-5 h-5" style={{ color: VIOLET }} />
               <a
-                href="tel:+910123456789"
+                href="tel:+919945242861"
                 className="transition"
                 style={{ color: PRIMARY_COLOR }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = DARK_BLUE)}
                 onMouseLeave={(e) => (e.currentTarget.style.color = PRIMARY_COLOR)}
               >
-                +91 0123456789
+                +91 9945242861
               </a>
             </div>
             <div className="flex items-center space-x-3 text-sm">

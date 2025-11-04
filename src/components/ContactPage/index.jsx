@@ -164,11 +164,11 @@ const ContactPage = () => {
             <div>
               <p className="text-sm font-medium text-gray-500 uppercase">Call Us</p>
               <a
-                href="tel:+910123456789"
+                href="tel:+919945242861"
                 className="text-lg font-semibold text-gray-800 hover:text-primary transition"
                 style={{ color: PRIMARY_COLOR }}
               >
-                +91 0123456789
+                +91 9945242861
               </a>
               <p className="text-sm text-gray-600">Mon - Sat, 9:00 AM - 6:00 PM IST</p>
             </div>

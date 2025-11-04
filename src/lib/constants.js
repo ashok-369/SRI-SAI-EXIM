@@ -1,6 +1,8 @@
 import { Plane, Ship, Truck, Zap, FileText, Package } from "lucide-react"
 //import air_freight from "@/assets/air_freight.jpg"
 import airFreight from "@/assets/airFreight.jpg"
+import oceanFreight from "@/assets/oceanFreight.jpg"
+import cargoTruck from "@/assets/cargoTruck.jpg"
 
 export const COMPANY_NAME = "Sri Sai Exim"
 export const PRIMARY_COLOR = "#0047AB" // Blue
@@ -58,10 +60,10 @@ export const SERVICE_CARDS = [
     title: "Air Freight",
     description: "Fast, reliable, and secure air transportation for time-critical and high-value shipments worldwide.",
     shortDescription: "Sri Sai Exim's specialist air freight teams constantly monitor direct flights and offer just-in-time deliveries to reduce inventory costs.",
-    imageUrl: "https://srisaiexim.in/images/air-freight.jpg",
+    //imageUrl: "https://srisaiexim.in/images/air-freight.jpg",
     // imageUrl : "https://srisaiexim.in/images/sri-sai-exim-banner-i.jpg",
     //imageUrl : `${airFreight}`,
-    BannerImageUrl:`${airFreight}`,
+    imageUrl:`${airFreight}`,
     content: {
       hero: "Seamless Global Air Cargo Management",
       intro: "Sri Sai Exim specialist air freight teams constantly monitor direct flights and liaise with airlines and agents. With an extensive warehouse network, we also offer temporary storage and just-in-time deliveries that will measurably reduce your inventory costs.",
@@ -82,7 +84,7 @@ export const SERVICE_CARDS = [
         "Door-To-Door Services",
       ],
       contact: {
-        phone: "+91 0123456789",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -94,6 +96,7 @@ export const SERVICE_CARDS = [
     description: "Cost-effective and flexible seafreight solutions for FCL (Full Container Load) and LCL (Less than Container Load), ensuring global reach.",
     shortDescription: "We handle large loads of goods by sea using containers, ideal for shipments over 100kg.",
     imageUrl: "https://srisaiexim.in/images/ocean-freight.jpg",
+    imageUrl :`${oceanFreight}`,
     content: {
       hero: "Reliable, High-Volume Global Shipping",
       intro: "Sri Sai Exim handling ocean freight is the method of transporting often large loads of goods by sea – putting cargo in large containers which are loaded onto vessels. As a general rule, shipments weighing more than 100kg – or consisting of multiple cartons – will be sent by sea freight.",
@@ -108,7 +111,7 @@ export const SERVICE_CARDS = [
         "Heavy Duty Containers (for specialized cargo)",
       ],
       contact: {
-        phone: "+91 0123456789",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -119,7 +122,8 @@ export const SERVICE_CARDS = [
     title: "Surface Transportation",
     description: "Efficient road and rail cargo services, ensuring timely and damage-free delivery across land routes.",
     shortDescription: "We provide safe, efficient distribution by road, rail, and integrated freight, backed by our own and leased fleet.",
-    imageUrl: "https://srisaiexim.in/images/surface-transportation.jpg",
+    // imageUrl: "https://srisaiexim.in/images/surface-transportation.jpg",
+    imageUrl : `${cargoTruck}`,
     content: {
       hero: "Seamless Road, Rail, and Integrated Freight",
       intro: "Surface transportation means any conveyance of people, goods, or commodities using one or more surface transportation modes. Surface transportation primarily means the movement of people and cargo by road, train or ship. With focus and expertise, we provide safe and efficient distribution of a broad variety of goods which includes raw materials, finished and consumer goods, machinery, documents and foodstuffs with support of our dedicated Road Transport team.",
@@ -132,7 +136,7 @@ export const SERVICE_CARDS = [
         "Highest quality of customer service and perfect handling",
       ],
       contact: {
-        phone: "+91 0123456789",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -153,7 +157,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 0123456789",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -174,7 +178,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 0123456789",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
@@ -195,7 +199,7 @@ export const SERVICE_CARDS = [
         "Timely updates",
       ],
       contact: {
-        phone: "+91 0123456789",
+        phone: "+91 9945242861",
         emailLink: "mailto:sales@srisaiexim.in",
       },
     },
