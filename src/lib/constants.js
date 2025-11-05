@@ -3,6 +3,8 @@ import { Plane, Ship, Truck, Zap, FileText, Package } from "lucide-react"
 import airFreight from "@/assets/airFreight.jpg"
 import oceanFreight from "@/assets/oceanFreight.jpg"
 import cargoTruck from "@/assets/cargoTruck.jpg"
+import logistics from "@/assets/logistics.jpg"
+import dgCertification from "@/assets/dgCertification.jpg"
 
 export const COMPANY_NAME = "Sri Sai Exim"
 export const PRIMARY_COLOR = "#0047AB" // Blue
@@ -147,7 +149,8 @@ export const SERVICE_CARDS = [
     title: "Logistics & Transportation",
     description: "End-to-end supply chain management, optimizing flow from origin to the final point of delivery.",
     shortDescription: "Expert, integrated supply chain management and transportation solutions.",
-    imageUrl: "https://srisaiexim.in/images/logistics-and-transportation.jpg",
+    // imageUrl: "https://srisaiexim.in/images/logistics-and-transportation.jpg",
+    imageUrl : `${logistics}`,
     content: {
       hero: "Service Coming Soon",
       intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",
@@ -189,7 +192,8 @@ export const SERVICE_CARDS = [
     title: "DG Certification & Packing",
     description: "Certified and specialized handling of Dangerous Goods compliant with global safety standards.",
     shortDescription: "Specialized handling and certification for safe transport of hazardous materials.",
-    imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
+    //imageUrl: "https://srisaiexim.in/images/dg-certification-and-packing.jpg",
+     imageUrl : `${dgCertification}`,
     content: {
       hero: "Service Coming Soon",
       intro: "Service Coming Soon We’re working on adding detailed information for this service. Stay tuned for updates.",

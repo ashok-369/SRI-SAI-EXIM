@@ -24,7 +24,9 @@ const HeroSection = () => (
 
     {/* Content */}
     <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:pt-25 lg:px-8">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-extrabold tracking-tight text-white leading-tight mb-6 animate-fade-in-up">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-extrabold tracking-tight text-white leading-tight mb-6 animate-fade-in-up"
+      style={{textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)"}}
+      >
         We make your relocation as{" "}
         <span className="text-[#30b6f0]" style={{ textShadow: "2px 2px 4px rgba(26, 1, 1, 0.66)" }}>smooth</span> as you need.
       </h1>
