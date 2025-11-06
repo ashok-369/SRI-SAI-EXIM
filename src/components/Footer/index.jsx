@@ -27,9 +27,9 @@ const Footer = () => {
         {/* Top Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-200/30 pb-10">
           {/* Column 1: Logo & About */}
-          <div className="col-span-2 md:col-span-1 space-y-4">
-            <Link to="/" className="inline-block">
-              <SriSaiEximLogo className="w-8 h-8 cursor-pointer" />
+          <div className="col-span-2 md:col-span-1 space-y-1 pt-0 mt-0 pl-0 ml-0">
+            <Link to="/" className="inline-block pt-0 pl-0 ml-0">
+              <SriSaiEximLogo className="w-20 h-8 cursor-pointer pl-0" />
             </Link>
             <p className="text-sm leading-relaxed" style={{ color: textColor }}>
               Dedicated to providing hassle-free, timely, and cost-effective

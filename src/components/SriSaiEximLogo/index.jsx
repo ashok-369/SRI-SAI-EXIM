@@ -5,7 +5,7 @@ const SriSaiEximLogo = ({ className = "w-auto h-10", onClick }) => (
   <button
     onClick={onClick}
     // Ensures classes like h-14 from the parent are applied
-    className={`flex items-center space-x-2 font-poppins focus:outline-none bg-transparent border-none shadow-none m-0 ${className}`} 
+    className={`flex items-center space-x-2 font-poppins focus:outline-none bg-transparent border-none shadow-none p-0 m-0 ${className}`} 
     style={{
       backgroundColor: "transparent",
       border: "none",
@@ -25,7 +25,7 @@ const SriSaiEximLogo = ({ className = "w-auto h-10", onClick }) => (
 
     <img
       src="https://srisaiexim.in/images/sri-sai-exim.png"
-      className="h-full object-contain" // Use h-full to size the image relative to the button height
+      className="h-full object-contain pl-0" // Use h-full to size the image relative to the button height
       style={{ backgroundColor: "transparent" }}
     />
 

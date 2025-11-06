@@ -7,6 +7,9 @@ export default defineConfig({
   plugins: [react(),
       tailwindcss(),
   ],
+   build: {
+    outDir: 'dist'
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),  // '@' points to 'src' folder
@@ -14,10 +17,9 @@ export default defineConfig({
   },
 })
 
-
 // import react from '@vitejs/plugin-react';
 
-// export default {
+// export default { 
 //   plugins: [react({
 //     jsxRuntime: 'automatic',
 //   })],
