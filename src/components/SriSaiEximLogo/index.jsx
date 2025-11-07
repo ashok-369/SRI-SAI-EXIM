@@ -14,11 +14,11 @@ const SriSaiEximLogo = ({ className = "w-auto h-10", onClick }) => (
     }}
   >
     <svg
-      className="w-10 h-10" // Explicitly size the SVG icon
+      className="w-10 h-10 " // Explicitly size the SVG icon
       viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{ backgroundColor: "transparent", }}
+      style={{ backgroundColor: "transparent", marginLeft:"0px" , paddingLeft: "0px" }}
     >
         {/* Placeholder for the actual SVG path/content, if any */}
     </svg>
