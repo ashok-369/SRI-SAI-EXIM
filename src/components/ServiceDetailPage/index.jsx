@@ -84,7 +84,7 @@ const ServiceDetailPage = () => {
           {/* Contact Information (Column 3 - Sidebar) */}
           
           <div className="lg:col-span-1">
-            <div className="sticky top-10 p-6 bg-white border border-gray-200 rounded-lg shadow-xl">
+            <div className="sticky top-25 p-6 bg-white border border-gray-200 rounded-lg shadow-xl">
               <h3 className="text-2xl font-bold text-[#207391] mb-4 border-b pb-2">  {/* gray-800 */}
                 Connect with Our Team
               </h3>
