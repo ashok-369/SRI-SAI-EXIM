@@ -47,7 +47,7 @@ export const PAGE_LINKS = [
   { name: "About", page: "about" },
   { name: "Team", page: "team" },
   { name: "Services", page: "services" },
-  { name: "Contact", page: "contact" },
+  // { name: "Contact", page: "contact" },
 ]
 
 export const TEAM_MEMBERS = [

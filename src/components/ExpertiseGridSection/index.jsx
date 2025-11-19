@@ -110,14 +110,23 @@ export default function Services() {
               >
                 {/* Icon Container */}
                 <div className="flex justify-center mb-6">
-                  <div className="relative w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shadow-inner shadow-blue-200/50 group-hover:shadow-blue-300 transition duration-500">
+                  {/* <div className="relative w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shadow-inner shadow-blue-200/50 group-hover:shadow-blue-300 transition duration-500">
                     <img
                       src={service.iconUrl}
                       alt={service.title}
                       className="relative w-14 h-14 object-contain z-10"
                       onError={(e) => { e.currentTarget.style.display = 'none'; }}
                     />
-                  </div>
+                  </div> */}
+                  
+                  <div className="relative w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center shadow-inner shadow-blue-200/50 group-hover:shadow-blue-300 transition duration-500 overflow-hidden">
+                    <img
+                        src={service.iconUrl}
+                        alt={service.title}
+                        className="relative w-full h-full object-cover z-10" 
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                    />
+                    </div>
                 </div>
 
                 {/* Service Title */}
